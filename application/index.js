@@ -4,7 +4,7 @@ const bookRoutes = require('./book-routes');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('Server running!');
+    res.render('home', { data: { bookName: 'King Arthur' } });
 });
 
 module.exports = {
